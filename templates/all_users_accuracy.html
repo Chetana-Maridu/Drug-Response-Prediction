@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Users Accuracy</title>
+</head>
+<body>
+    <h2>Accuracy of All Users</h2>
+    <img id="accuracy_chart" src="" alt="Accuracy chart" />
+
+    <script>
+        fetch('/all_users_accuracy')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('accuracy_chart').src = "data:image/png;base64," + data.img_data;
+            });
+    </script>
+</body>
+</html>
