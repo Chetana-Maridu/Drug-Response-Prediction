@@ -12,8 +12,8 @@ from io import BytesIO
 def get_db_connection():
     return mysql.connector.connect(
         host="localhost",
-        user="#####",            # Replace with your MySQL username
-        password="######",   # Replace with your MySQL password
+        user="#####",            # Replace  #  with your MySQL username
+        password="######",   # Replace #  with your MySQL password
         database="drug_responsef"  # Use the drug_response database
     )
 
